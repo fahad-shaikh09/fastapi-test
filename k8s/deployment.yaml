@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: fastapi
-          image: demisto/fastapi:0.125.0.9094740
+          image: nginx:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 80
