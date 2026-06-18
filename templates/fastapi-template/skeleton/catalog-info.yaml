@@ -1,7 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: fastapi-test
+  name: ${{ values.name }}
+  annotations:
+    backstage.io/kubernetes-label-selector: 'app=${{ values.name }}'
+    backstage.io/kubernetes-namespace: ${{ values.namespace }}
 spec:
   type: service
   lifecycle: experimental
