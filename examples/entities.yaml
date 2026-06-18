@@ -19,6 +19,19 @@ spec:
   system: examples
   providesApis: [example-grpc-api]
 ---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: fastapi-service
+  annotations:
+    backstage.io/kubernetes-label-selector: 'app=fastapi'
+    backstage.io/kubernetes-namespace: fastapi-test
+spec:
+  type: service
+  lifecycle: production
+  owner: guests
+  system: examples
+---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
 apiVersion: backstage.io/v1alpha1
 kind: API
