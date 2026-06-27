@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/fahad-shaikh09/fastapi-test
+    repoURL: https://github.com/fahad-shaikh09/backstage
     targetRevision: main
     path: k8s
 

@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: fastapi
-          image: ghcr.io/fahad-shaikh09/fastapi-test:latest
+          image: ghcr.io/fahad-shaikh09/backstage:latest
           ports:
             - containerPort: 8080
